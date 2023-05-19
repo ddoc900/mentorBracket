@@ -1,3 +1,21 @@
 html {
     background-color: rgba(46, 118, 4, 0.755);
 }
+
+body {
+    display: flex;
+}
+
+.round {
+    height: 30px;
+    width: 50px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.game {
+    background-color: cornflowerblue;
+    height: 30px;
+    width: 50px;
+    border: 1px solid black;
+}

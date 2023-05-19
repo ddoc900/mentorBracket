@@ -8,29 +8,29 @@ const east = [
         { name: "west virginia", seed: 9 },
     ],
     [
-        { name: "alabama", seed: 5 },
-        { name: "texas cc", seed: 12 },
+        { name: "San Diego St.", seed: 5 },
+        { name: "Charleston", seed: 12 },
+    ],
+    [
+        { name: "virgina", seed: 6 },
+        { name: "furman", seed: 11 },
+    ],
+    [
+        { name: "creighton", seed: 3 },
+        { name: "nc state", seed: 14 },
+    ],
+    [
+        { name: "baylor", seed: 7 },
+        { name: "UCSB", seed: 10 },
+    ],
+    [
+        { name: "missouri", seed: 2 },
+        { name: "Utah St.", seed: 15 },
     ],
     [   
-        { name: "maryland", seed: 4 },
-        { name: "west virginia", seed: 13 },
+        { name: "Arizona", seed: 4 },
+        { name: "Princton", seed: 13 },
     ],
-    [
-        { name: "alabama", seed: 6 },
-        { name: "texas cc", seed: 11 },
-    ],
-    [
-        { name: "maryland", seed: 3 },
-        { name: "west virginia", seed: 14 },
-    ],
-    [
-        { name: "alabama", seed: 7 },
-        { name: "texas cc", seed: 10 },
-    ],
-    [
-        { name: "maryland", seed: 2 },
-        { name: "west virginia", seed: 15 },
-    ]
 ]
 
 function simulateGame(team1, team2) {
@@ -64,5 +64,28 @@ function simulateRound(games) {
         return nextGame[0];
     }
 }
+
+function createRound(gameCount) {
+   for(let i = 0; i < gameCount; i++){
+    const round = document.createElement('div');
+    round.className = 'round';
+    document.body.appendChild(round);
+    const game = document.createElement('div');
+    game.className = 'game';
+    document.body.round.appendChild(game);
+    }
+}
+
+// function createGame () {
+// for(let i = 8; i > 8; i/2){
+//     const game = document.createElement('div');
+//     game.className = 'game';
+//     document.body.appendChild(game);
+//     }
+// }
+
+
+
+createRound(5);
 
 simulateRound(east);
